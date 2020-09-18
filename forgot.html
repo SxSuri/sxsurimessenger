@@ -1,0 +1,37 @@
+{%- extends 'base-minimal.html' -%}
+
+{%- from '_funcs.html' import err, section -%}
+
+{%- block content -%}
+	<div id="id" title="forgot"></div>
+	{%- call section('green', "Forgot password", "forgot", padding = 'p1') -%}
+		<p id="forgot-subtitle">
+			If you forgot your password, or just want to change it, enter your email address in the form below.
+			<br/>
+			You'll receive an email with instructions for how to change your password.
+		</p>
+		
+		<div class="form-cont" align="left">
+			{% if sent_to %}
+				<div id="no-errors" class="no-errors">
+					Password reset email was sent to <strong id="sent_to">{{ sent_to }}</strong>.
+				</div>
+			{% endif %}
+			{% if errors %}
+				<div id="errors" class="errors-warn">
+					Password reset email was not sent. See errors below.
+				</div>
+			{% endif %}
+			
+			
+			<form class="my2" role="form" method="post" action="/forgot">
+				<label for="email">{{ err(errors, 'email') }}</label>
+				<input id="email" type="email" name="email" class="input" placeholder="your@email.com" {% if email != None %}value="{{ email }}"{% endif %}required/>
+				<br/><br/>
+				<button id="send-reset" type="submit" class="blue-button">
+					Send the reset email
+				</button>
+			</form>
+		</div>
+	{%- endcall -%}
+{%- endblock -%}

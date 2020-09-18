@@ -1,0 +1,32 @@
+{%- extends 'base-common.html' -%}
+
+{%- from '_funcs.html' import section -%}
+
+{%- block content -%}
+	<div id="id" title="404"></div>
+	{%- call section('red', "404 - Page Not Found", id = 'not-found') -%}
+		<div class="txt--center">
+			<p id="nf-msg1">
+				The resource you were looking for has either been renamed, relocated, or does not exist.
+			</p>
+			<p id="nf-msg2">
+				Or maybe you fat fingered something in the URL.
+			</p>
+		</div>
+		
+		<style>
+			h3 {
+				font-size: 25px;
+			}
+			#not-found {
+				padding-bottom: 3em;
+			}
+			#nf-msg1::after {
+				content: url("/static/emots/emot-sad.gif");
+			}
+			#nf-msg2::after {
+				content: url("/static/emots/emot-shy.gif");
+			}
+		</style>
+	{%- endcall -%}
+{%- endblock -%}

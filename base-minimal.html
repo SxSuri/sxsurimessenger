@@ -1,0 +1,15 @@
+{%- extends 'base.html' -%}
+
+{%- block head_end -%}
+	<link rel="stylesheet" href="/static/style/minimal.css?{{cache_buster}}"/>
+{%- endblock -%}
+
+{%- block body -%}
+	<a href="/" class="logo">
+		<img src="/static/logo.png" width="250px" />
+	</a>
+	
+	<div class="txt--center">
+		{% block content %}{% endblock %}
+	</div>
+{%- endblock -%}

@@ -1,0 +1,177 @@
+{%- extends 'base-common.html' -%}
+
+{%- block head_end -%}
+	<link rel="stylesheet" href="/static/style/downloads.css?{{cache_buster}}"/>
+{%- endblock -%}
+
+{%- block body -%}
+	<div id="id" title="downloads"></div>
+	<a href="/" class="logo">
+		<img src="/static/logo.png" width="250px" />
+	</a>
+	
+	<div class="section1" id="step1">
+		&nbsp;
+		<div class="s1-grid-container">
+			<div class="s1-grid-item step-circle">
+				1
+			</div>
+			
+			<div class="s1-grid-item step-title">
+				<p id="step1-title">Choose your language</p>
+			</div>
+			
+			<div class="s1-grid-item"></div>
+			<div class="s1-grid-item"></div>
+			<div class="s1-grid-item"></div>
+			
+			<div class="s1-grid-item">
+				<a href="#step2" onclick="getDownloads('ar');"> <img src="/static/flags/ar.png">		<p class="lng" id="ar-lng">Arabic</p> </a>
+				<a href="#step2" onclick="getDownloads('bg');"> <img src="/static/flags/bg.png">		<p class="lng" id="bg-lng">Bulgarian</p> </a>
+				<a href="#step2" onclick="getDownloads('zh-chs');"> <img src="/static/flags/cn.png">		<p class="lng" id="cns-lng">Chinese (Simplified)</p> </a>
+				<a href="#step2" onclick="getDownloads('zh-cht');"> <img src="/static/flags/cn.png">		<p class="lng" id="cnt-lng">Chinese (Traditional)</p> </a>
+				<a href="#step2" onclick="getDownloads('hr');"> <img src="/static/flags/hr.png">		<p class="lng" id="hr-lng">Croatian</p> </a>
+				<a href="#step2" onclick="getDownloads('cs');"> <img src="/static/flags/cs.png">		<p class="lng" id="cs-lng">Czech</p> </a>
+				<a href="#step2" onclick="getDownloads('da');"> <img src="/static/flags/da.png">		<p class="lng" id="da-lng">Danish</p> </a>
+				<a href="#step2" onclick="getDownloads('nl');"> <img src="/static/flags/nl.png">		<p class="lng" id="nl-lng">Dutch</p> </a>
+				<a href="#step2" onclick="getDownloads('en');"> <img src="/static/flags/en.png">		<p class="lng" id="en-lng">English</p>	</a>
+				<!-- up to 9 items -->
+			</div>
+			
+			<div class="s1-grid-item">
+				<a href="#step2" onclick="getDownloads('et');"> <img src="/static/flags/et.png">		<p class="lng" id="et-lng">Estonian</p>	</a>
+				<a href="#step2" onclick="getDownloads('fi');"> <img src="/static/flags/fi.png">		<p class="lng" id="fi-lng">Finnish</p>	</a>
+				<a href="#step2" onclick="getDownloads('fr');"> <img src="/static/flags/fr.png">		<p class="lng" id="fr-lng">French</p>	</a>
+				<a href="#step2" onclick="getDownloads('de');"> <img src="/static/flags/de.png">		<p class="lng" id="de-lng">German</p>	</a>
+				<a href="#step2" onclick="getDownloads('el');"> <img src="/static/flags/el.png">		<p class="lng" id="el-lng">Greek</p>	</a>
+				<a href="#step2" onclick="getDownloads('he');"> <img src="/static/flags/he.png">		<p class="lng" id="he-lng">Hebrew</p>	</a>
+				<a href="#step2" onclick="getDownloads('hu');"> <img src="/static/flags/hu.png">		<p class="lng" id="hu-lng">Hungarian</p>	</a>
+				<a href="#step2" onclick="getDownloads('it');"> <img src="/static/flags/it.png">		<p class="lng" id="it-lng">Italian</p>	</a>
+				<a href="#step2" onclick="getDownloads('ja');"> <img src="/static/flags/ja.png">		<p class="lng" id="ja-lng">Japanese</p>	</a>
+			</div>
+			
+			<div class="s1-grid-item">
+				<a href="#step2" onclick="getDownloads('ko');"> <img src="/static/flags/ko.png">		<p class="lng" id="ko-lng">Korean</p>	</a>
+				<a href="#step2" onclick="getDownloads('lv');"> <img src="/static/flags/lv.png">		<p class="lng" id="lv-lng">Latvian</p>	</a>
+				<a href="#step2" onclick="getDownloads('lt');"> <img src="/static/flags/lt.png">		<p class="lng" id="lt-lng">Lithuanian</p>	</a>
+				<a href="#step2" onclick="getDownloads('nb');"> <img src="/static/flags/nb.png">		<p class="lng" id="nb-lng">Norwegian</p>	</a>
+				<a href="#step2" onclick="getDownloads('pl');"> <img src="/static/flags/pl.png">		<p class="lng" id="pl-lng">Polish</p>	</a>
+				<a href="#step2" onclick="getDownloads('pt-br');"> <img src="/static/flags/br.png">	<p class="lng" id="br-lng">Portuguese (Brazil)</p>	</a>
+				<a href="#step2" onclick="getDownloads('pt-pt');"> <img src="/static/flags/pt.png">	<p class="lng" id="pt-lng">Portuguese (Portugal)</p>	</a>
+				<a href="#step2" onclick="getDownloads('ro');"> <img src="/static/flags/ro.png">	<p class="lng" id="ro-lng">Romanian</p>	</a>
+				<a href="#step2" onclick="getDownloads('ru');"> <img src="/static/flags/ru.png">	<p class="lng" id="ru-lng">Russian</p>	</a>
+			</div>
+			
+			<div class="s1-grid-item">
+				<a href="#step2" onclick="getDownloads('sr-Latn');"> <img src="/static/flags/sr-Latn.png">	<p class="lng" id="sr-Latn-lng">Serbian (Latin)</p>	</a>
+				<a href="#step2" onclick="getDownloads('sk');"> <img src="/static/flags/sk.png">	<p class="lng" id="sk-lng">Slovak</p>	</a>
+				<a href="#step2" onclick="getDownloads('sl');"> <img src="/static/flags/sl.png">		<p class="lng" id="sl-lng">Slovene</p>	</a>
+				<a href="#step2" onclick="getDownloads('es');"> <img src="/static/flags/es.png">		<p class="lng" id="es-lng">Spanish</p>	</a>
+				<a href="#step2" onclick="getDownloads('sv');"> <img src="/static/flags/sv.png">		<p class="lng" id="sv-lng">Swedish</p>	</a>
+				<a href="#step2" onclick="getDownloads('th');"> <img src="/static/flags/th.png">		<p class="lng" id="th-lng">Thai</p>	</a>
+				<a href="#step2" onclick="getDownloads('tr');"> <img src="/static/flags/tr.png">		<p class="lng" id="tr-lng">Turkish</p>	</a>
+				<a href="#step2" onclick="getDownloads('uk');"> <img src="/static/flags/uk.png">		<p class="lng" id="uk-lng">Ukranian</p>	</a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="section2" id="step2">
+		<!--<a href="#step1" class="back">&lt;- Back to language</a>-->
+		&nbsp;
+		<div class="section2-content">
+			<div class="s2-grid-container">
+				<div class="s2-grid-item step-circle">
+					2
+				</div>
+				
+				<div class="s2-grid-item step-title step2-title">
+					<p id="step2-title">Get started with SxSuri Messenger</p>
+				</div>
+				
+				<div class="s2-grid-item"><!--Do not use--></div>
+				
+				<div class="s2-grid-item">
+					<a href="#" class="recommended" id="recommended">
+						<img src="/static/download_recommended_a.png"/>
+						<div class="reco-text">
+							<h1 id="reco-dl">Link</h1>
+							<i id="reco-reco">Don't Work</i>
+							
+							<div class="reco-info">
+								<p id="reco-ver">i'm serious</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				
+				<div class="s2-grid-item"><!--Do not use--></div>
+				
+				<div class="s2-grid-item">
+					<hr>
+				</div>
+				
+				<div class="s2-grid-item"><!--Do not use--></div>
+				
+				<div class="s2-grid-item">
+					
+					<div class="extras">
+						<div class="extras-title">
+							<p id="extras-title">Extras+Messenger Installer</p>
+						</div>
+						<a id="xtra-msgplus3" href="http://storage.log1p.xyz/msgplus/MsgPlus-3.63.148.exe">
+							<div class="xtra-button" align="center">
+								<img src="/static/msgplus.png" height="52">
+								<p id="xtra-msgplus3-title">Messenger Plus!</p>
+							</div>
+						</a>
+						<a id="xtra-msgplus4" href="http://storage.log1p.xyz/msgplus/MsgPlus-4.83.374.exe">
+							<div class="xtra-button" align="center">
+								<img src="/static/msgpluslive.png" height="52">
+								<p id="xtra-msgplus4-title">Messenger Plus! Live</p>
+							</div>
+						</a>
+						<a id="xtra-poly" href="http://storage.log1p.xyz/misc/MSN_Polygamy.exe">
+							<div class="xtra-button" align="center">
+								<img src="/static/polygamy.png" height="52">
+								<p id="xtra-poly-title">MSN Polygamy</p>
+							</div>
+						</a>
+						<a id="xtra-emotcreator" href="https://mega.nz/file/SMVEiarC#hUjR2dTqcmS1y1WLxopEKAqKppk72_WuF6RDqVQ7cYk" target="_blank">
+							<div class="xtra-button" align="center">
+								<img src="/static/wlm-logo.png" height="52">
+								<p id="xtra-Contacts.msi-title">Contacts(Fix Incorrect Password Issue)</p>
+							</div>
+						</a>
+						<a id="xtra-archive" href="https://mega.nz/folder/6dkxkKha#8JStfrJZ8ScHwEVuI-3__w" target="_blank">
+							<div class="xtra-button" align="center">
+								<img src="/static/wlm-logo.png" height="52">
+								<p id="xtra-archive-title">Windows Live Messenger 2009</p>
+							</div>
+						</a>
+						<a id="xtra-stuffplug30" href="https://mega.nz/file/3QcShArB#6zDnLP0wET6GK-apI-Scf068NlLYZZOD06CWwm5pKBc">
+							<div class="xtra-button" align="center">
+								<img src="/static/wlm-logo.png" height="52">
+								<p id="xtra-Certificate-title">Certificate</p>
+							</div>
+						</a>
+						<a id="xtra-stuffplug35" href="https://mega.nz/file/mNdX0QRT#8nkhM2M41rckm3V-HnhnTwSIH6qkQ_xrvNcFzAQ-ZxI">
+							<div class="xtra-button" align="center">
+								<img src="/static/wlm-logo.png" height="52">
+								<p id="xtra-hosts 2009-title">Hosts 2009</p>
+							</div>
+						</a>
+						<a id="xtra-richpresence" href="http://storage.log1p.xyz/misc/RichPresence.7z">
+							<div class="xtra-button" align="center">
+								<img src="/static/rich-presence.png" height="52">
+								<p id="xtra-richpresence-title">Rich Presence</p>
+							</div>
+						</a>
+
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{%- endblock -%}

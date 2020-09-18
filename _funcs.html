@@ -1,0 +1,14 @@
+{%- macro section(bg, title = None, id = None, padding = 'p1') -%}
+	<div class="bg--{{ bg }} group section content-section">
+		<section class="measure {{ padding }}" {% if id %}id="{{ id }}"{% endif %}>
+			{% if title %}<h2 align="center" id="{{ id }}-title">{{ title }}</h2>{% endif %}
+			{{ caller() }}
+		</section>
+	</div>
+{%- endmacro -%}
+
+{%- macro err(errors, field) -%}
+	{% if errors and errors[field] %}
+		<small id="{{ field }}-error" class="error">{{ errors[field] }}</small>
+	{% endif %}
+{%- endmacro -%}

@@ -1,0 +1,51 @@
+{%- extends 'base-minimal.html' -%}
+
+{%- from '_funcs.html' import err, section -%}
+
+{%- block content -%}
+	<div id="id" title="reset"></div>
+	{%- call section('off-white', "Reset Password", "reset", padding = 'p1') -%}
+		{% if valid_token %}
+			<p id="reset-valid">
+				Use the form below to set a new password.
+			</p>
+		{% else %}
+			<p id="reset-expired">
+				Sorry, that link has expired. Please <a href="/forgot">try again</a>.
+			</p>
+		{% endif %}
+	{%- endcall -%}
+	{% if valid_token %}
+		<div class="form-cont">
+			{% if reset_success %}
+				<div id="no-errors" class="no-errors">
+					Your password has been changed.
+				</div>
+			{% endif %}
+			{% if errors %}
+				<div id="errors" class="errors-warn">
+					Your password was not changed. See errors below.
+				</div>
+			{% endif %}
+		
+			<form class="my2" role="form" method="post">
+				<label for="password1">{{ err(errors, 'password1') }}</label>
+				<input class="input" type="password" name="password1" id="password1" placeholder="6+ characters (most MSN versions tend to only allow up to 8 though)" required pattern=".{6,}"/>
+
+				<label for="password2">{{ err(errors, 'password2') }}</label>
+				<input class="input" type="password" name="password2" id="password2" placeholder="Enter the same password again" required pattern=".{6,}"/>
+				<br/>
+				<input type="checkbox" name="support_old" value="true" id="support_old" {% if support_old %}checked{% endif %}>
+				<label id="support_old-text" class="support_old" for="support_old">Old MSN support (required to log in to MSN 1/2/3/4). These versions are <strong>insecure.</strong></label>
+				<br/><br/>
+				<button id="change-passwd" type="submit" class="blue-button">Change Password</button>
+			</form>
+		</div>
+
+		<style>
+			.no-errors::before {
+				content: none;
+			}
+		</style>
+	{% endif %}
+{%- endblock -%}

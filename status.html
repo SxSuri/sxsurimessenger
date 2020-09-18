@@ -1,0 +1,65 @@
+{%- extends 'base-common.html' -%}
+
+{%- from '_funcs.html' import section -%}
+
+{%- block content -%}
+	<div id="id" title="status"></div>
+	{%- call section('off-white', "Service Status", id = 'status') -%}
+		<div id="status-detail">
+			<h3 id="status-preface">Updated every 2 minutes</h3>
+			
+			{%- if server_status -%}
+				{%- if server_status['status'] == 'ok' -%}
+					<h1 id="status-online" class="status-text online">ONLINE</h1>
+					<p id="online-desc">SxSuri's main server is functioning under normal conditions, and responds to requests in a timely fashion.<sup>1</sup></p>
+				{%- elif server_status['status'] == 'slow' -%}
+					<h1 id="status-slow" class="status-text slow">CONGESTED</h1>
+					<p id="slow-desc">SxSuri's main server is functioning, but does not respond to requests in a timely manner.<sup>1</sup></p>
+				{%- else -%}
+					<h1 id="status-online" class="status-text online">ONLINE</h1>
+					<p id="online-desc">SxSuri's main server is functioning under normal conditions, and responds to requests in a timely fashion.<sup>1</sup></p>
+				{%- endif -%}
+				Last updated: <em>{{ server_status['last_updated'].strftime('%B %d, %Y at %H:%M:%S UTC') }}</em>
+			{%- else -%}
+				<p id="status-not-loaded">Server status hasn't been loaded yet.</p>
+			{%- endif -%}
+		</div>
+		
+		<div id="footnotes">
+			<small>
+				<p id="footnote-1">
+					<sup>1</sup> Accepted normal server response times are 10 seconds or less
+				</p>
+				<p id="footnote-technical-1">
+					* Connectivity is determined from port 1863 on the main server
+				</p>
+			</small>
+		</div>
+		
+		<style>
+			#status-detail {
+				text-align: center;
+			}
+			
+			#footnotes {
+				padding-top: 3em;
+			}
+			
+			.status-text {
+				font-size: 48px;
+			}
+			
+			.online {
+				color: green;
+			}
+			
+			.slow {
+				color: #daa100;
+			}
+			
+			.offline {
+				color: red;
+			}
+		</style>
+	{%- endcall -%}
+{%- endblock -%}

@@ -1,0 +1,63 @@
+{%- extends 'base-common.html' -%}
+
+{%- from '_funcs.html' import section -%}
+
+{%- block content -%}
+	<div id="id" title="stats"></div>
+	{%- call section('off-white', "Stats", "stats") -%}
+		<p id="st-refresh" class="muted">
+			Stats refresh every 5 minutes.
+		</p>
+		
+
+		{% if stats %}
+			<span class="bold">{{ stats['logged_in'] }}</span> <span id="st-online">users currently online.</span>
+
+			{% for hour_formatted, hour_stats in stats['by_hour'] %}
+				<h4>{{ hour_formatted }}</h4>
+				
+				<table style="width: 40em">
+					<colgroup>
+						<col style="width: 40%"/>
+						<col style="width: 20%"/>
+						<col style="width: 20%"/>
+						<col style="width: 20%"/>
+					</colgroup>
+					<thead>
+						<tr>
+							<th rowspan="2" id="st-ver">Program/Version</th>
+							<th rowspan="2" class="txt--center" id="st-active">Active Users</th>
+							<th colspan="2" class="txt--center" id="st-msgs">Messages</th>
+						</tr>
+						<tr>
+							<th class="txt--center" id="st-sent">Sent</th>
+							<th class="txt--center" id="st-received">Received</th>
+						</tr>
+					</thead>
+					<tbody>
+						{% for client_stats in hour_stats %}
+							<tr>
+								<td>{{ client_stats['client_formatted'][:30] }}</td>
+								<td class="txt--right">{{ client_stats['users_active'] }}</td>
+								<td class="txt--right">{{ client_stats['messages_sent'] }}</td>
+								<td class="txt--right">{{ client_stats['messages_received'] }}</td>
+							</tr>
+						{% endfor %}
+					</tbody>
+				</table>
+			{% endfor %}
+		{% else %}
+			No stats available.
+		{% endif %}
+	{%- endcall -%}
+	<style type="text/css">
+		.measure {
+			margin-right: 2em !important;
+		}
+		@media only screen and (max-width: 830px) {
+			table {
+				width: 100% !important;
+			}
+		}
+	</style>
+{%- endblock -%}

@@ -1,0 +1,62 @@
+{%- extends 'base-minimal.html' -%}
+
+{%- from '_funcs.html' import err, section -%}
+
+{%- block content -%}
+	<div id="id" title="register"></div>
+	{%- call section('green', "YOU CAN'T REGISTER YET ON THIS SITE!", 'mkacc', 'p1') -%}
+		<p id="mkacc-subtitle" align="center" class="reset" style="margin-top: 0em">
+			(You can't register a account on this site click on the link if you have any questions add me スクスリ#0547, <a href="https://docs.google.com/forms/d/e/1FAIpQLSd4ORVBCWOdZO7Dty1L7LeZBftO0zqW-IKQquAerwmLwJJgTQ/viewform?usp=sf_link">click here</a>.)
+		</p>
+
+			<div class="form-cont" align="left">
+				
+				{% if created_email %}
+					<div id="no-errors" class="no-errors">
+						Account <strong>{{ created_email }}</strong> created. Have fun!
+					</div>
+				{% endif %}
+				{% if errors %}
+					<div class="errors-warn">
+						{% if errors['recaptcha'] %}
+							{{ errors['recaptcha'] }}
+						{% else %}
+							<p id="errors">Account not created. See errors below.</p>
+						{% endif %}
+					</div>
+				{% endif %}
+					
+				<form class="sign-up-form" id="sign-up-form" role="form" method="post">
+					<label for="email">{{ err(errors, 'email') }}</label>
+					<input class="input" type="email" name="email" id="email" placeholder="your@email.com" {% if email != None %}value="{{ email }}"{% endif %}required/>
+
+					<label for="password1">{{ err(errors, 'password1') }}</label>
+					<input class="input" type="password" name="password1" id="password1" placeholder="6+ characters (most MSN versions tend to only allow up to 8 though)" required pattern=".{6,}"/>
+
+					<label for="password2">{{ err(errors, 'password2') }}</label>
+					<input class="input" type="password" name="password2" id="password2" placeholder="Enter the same password again" required pattern=".{6,}"/>
+
+					<input type="checkbox" name="support_old" value="true" id="support_old" {% if support_old %}checked{% endif %}>
+					<label for="support_old" id="support_old-text" class="support_old">Old MSN support (required to log in to MSN 1/2/3/4). These versions are <strong>insecure.</strong></label>
+
+					<br/><br/>
+						{%- if recaptcha_api_key -%}
+						<button id="mkacc-button" class="signup-button g-recaptcha" data-sitekey="{{ recaptcha_api_key }}" data-callback="onSubmit">
+							Create Account
+						</button>
+						{%- else -%}
+							<button id="mkacc-button" type="submit" class="blue-button">
+								Create Account
+							</button>
+						{%- endif -%}
+
+						<script>
+							function onSubmit(token) {
+								document.getElementById('sign-up-form').submit();
+							}
+						</script>
+				</form>
+					<a id="goto-downloads" class="goto" href='/downloads'>Already have an SxSuri Messenger account?</a>
+			</div>
+	{%- endcall -%}
+{%- endblock -%}

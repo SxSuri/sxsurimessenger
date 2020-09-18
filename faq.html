@@ -1,0 +1,89 @@
+{%- extends 'base-common.html' -%}
+
+{%- from '_funcs.html' import section -%}
+
+{%- block content -%}
+	<div id="id" title="faq"></div>
+	{%- call section('off-white', "FAQ", id = 'faq') -%}
+		<details id="q1">
+			<summary id="q1-s">Do I need to register a Microsoft account to use SxSuri Messenger?</summary>
+			<p id="q1-p1">The answer is no. We originally had plans to make it so that MSN users could use their real Microsoft accounts and access their contacts and Microsoft services with ease, but due to the new direction we're going with for SxSuri Messenger, which is making all frontends global along with accounts access to them, it's next to impossible to put those plans into motion for technical reasons. We probably won't be going back to this subject.</p>
+			<p id="q1-p2">Regardless, we'd recommend you to use an actual e-mail address than make one up, which has been done before. Not only will it let people have the option to e-mail you when you're offline, but when you want to reset your password, SxSuri Messenger will attempt to send you an e-mail with a link to reset your password. Having an actual e-mail address tied to your SxSuri Messenger account will make that possible.</p>
+		</details>
+		
+		<details id="q2">
+			<summary id="q2-s">Is SxSuri Messenger Server being actively developed on?</summary>
+			<p id="q2-p1">
+				Development is sporadic. However, other frontends (Yahoo! Messenger, IRC, AIM, XMPP) might be coming soon. Some even have functional proof-of-concepts.
+			</p>
+			<p id="q2-p2">
+				
+			</p>
+		</details>
+		
+		<details id="q3">
+			<summary id="q3-s">Will SxSuri Messenger support other dead IM clients?</summary>
+			<p id="q3-p1">Yes! In fact, a Yahoo! Messenger frontend is in the works (and mostly working, with caveats). We also have plans for other frontends.</p>
+		</details>
+		
+
+		
+		<details id="q5">
+			<summary id="q5-s">After I added someone to my contact list on WLM 8.x, said contact appears offline for a long time even when they aren't. Why does this happen?</summary>
+			<p id="q5-p1">This is a bug, and has been mostly fixed (except for edge cases; WLM 8+'s "protocols" are a mess), but the fixes haven't been deployed yet.</p>
+		</details>
+		
+		
+		
+		<details id="q7">
+			<summary id="q7-s">SxSuri Messenger boots me off and it takes me longer than usual to log in or I can't log in at all. Any reason why?</summary>
+			<p id="q7-p1">For the time being, this is because the server is either overloaded (CPU throttle) or its socket listener is acting up and the services have to be restarted. We hope to address the first issue by federating SxSuri's server communication in the future.</p>
+		</details>
+		
+		
+		
+		
+		
+		<details id="q10">
+			<summary id="q10-s">Will SxSuri Messenger implement ads to fill in the placeholder ad window on MSN/WLM or just place ads up in general?</summary>
+			<p id="q10-p1">SxSuri Messenger will definitely <strong>NOT</strong> place ads. Microsoft's legal department will notice money being made off their IP (intellectual property; basically the legal way of saying stuff someone/something owns) and cease-and-desist us, destroying the project. We don't want that, do we?</p>
+			<p id="q10-p2">We're planning on putting up several MSN text ads our community made in our next update, but they aren't for profit - they're either free promotion for other projects or links to SxSuri Messenger downloads and pages (some that don't even exist yet <img src="/static/emots/emot-wow.gif" />).</p>
+		</details>
+		
+		<details id="q11">
+			<summary id="q11-s">I'm being added to these random annoying group chats/multi-user conversations that I don't have any control over of blocking! Is there anything I can do?</summary>
+			<p id="q11-p1">This isn't specific to SxSuri Messenger, and either way, this is beyond our control, as this is done by our very own userbase. The least you can do is block any suspected owners of these group chats/multi-user conversations, and if that isn't enough for you, make sure that your privacy options only allow people you add on your contact list to talk to you.</p>
+		</details>
+		
+		<details id="q12">
+			<summary id="q12-s">Will SxSuri Messenger open up a Patreon/take donations?</summary>
+			<p id="q12-p1">There are no plans for this at the moment.</p>
+			<p id="q12-p2">Hosting fees are manageable right now (mostly paying for bandwidth for the downloads), but if we ever do something like this, we'll probably start by accepting cryptocurrency donations.</p>
+		</details>
+		
+		<style>
+			#faq {
+				padding-bottom: 3em;
+			}
+			
+			#faq details {
+				padding: 0.3em 0.5em;
+				margin-bottom: 1em;
+			}
+			
+			#faq details:hover {
+				background-color: hsl(204.1, 69.9%, 53.1%, 0.2);
+			}
+			
+			#faq p {
+				margin: 0em 0em 0.5em;
+			}
+			
+			#faq details summary {
+				font-size: 1.2em;
+				line-height: 1.3em;
+				cursor: pointer;
+			}
+		</style>
+	{%- endcall -%}
+{%- endblock -%}

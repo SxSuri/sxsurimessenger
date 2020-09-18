@@ -1,0 +1,247 @@
+body {
+	overflow: hidden;
+}
+
+.logo {
+	position: fixed;
+	top: 5px;
+	left: 10px;
+	z-index: 5;
+}
+
+.section1, .section2 {
+	background-color: #9ed3f7;
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+}
+
+.s1-grid-container {
+	display: grid;
+	width: 800px;
+	margin: 5em auto;
+	grid-template-columns: 100px 190px 190px 190px 190px;
+	grid-template-rows: 100px auto;
+	grid-gap: 5px;
+}
+
+.s1-grid-item a {
+	color: black;
+	text-decoration: none;
+	display: block;
+	line-height: 45px;
+}
+
+.step-circle {
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	background-color: white;
+	color: black;
+	font-size: 70px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.lng {
+	display: inline;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.step-title {
+	grid-column: 2 / span 2;
+	font-weight: 600;
+	font-size: 30px;
+}
+.step2-title {
+	grid-column: 2 / span 1;
+}
+
+.section2 {
+	position: absolute;
+	top: 100%;
+}
+
+.recommended {
+	box-shadow: 0px 0px 5px;
+	background-image: url('/static/download_recommended.gif');
+	background-repeat: round;
+	min-width: 275px;
+	height: 95px;
+	display: inline-block;
+	padding-right: 15px;
+}
+.recommended img {
+	position: relative;
+	display: inline-block;
+	margin: 0 20px;
+}
+
+.reco-text {
+	position: relative;
+	letter-spacing: -1px;
+	color: white;
+	line-height: 0px;
+	display: inline-block;
+}
+.reco-text h1 {
+	font-size: 28px;
+	font-weight: 900;
+	letter-spacing: -2px;
+}
+.reco-text i {
+	font-size: 11px;
+	letter-spacing: -0.5px;
+}
+
+.reco-info {
+	margin-top: 25px;
+	font-size: 12px;
+	opacity: 0.5
+}
+
+.s2-grid-container {
+	display: grid;
+	width: 900px;
+	margin: 0px auto;
+	grid-template-columns: 100px 800px;
+	grid-template-rows: 100px 100px 15px auto 85px auto;
+	grid-gap: 5px;
+}
+.s2-grid-container a {
+	text-decoration: none;
+	color: #1f5fae;
+}
+
+.back {
+	font-size: 10px;
+}
+
+.pre-patched-versions {
+	display: grid;
+	grid-template-columns: 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px;
+	grid-template-rows: 20px auto;
+	grid-gap: 10px;
+}
+
+.ppv-title {
+	grid-column: 1 / span 10;
+	font-size: 18px;
+}
+.ppv-title p {
+	position: relative;
+	margin-top: 5px;
+}
+#patching-link {
+	font-size: 12px;
+}
+
+.ppv-button {
+	width: 100%;
+	height: 100%;
+	background-color: #e7fbfe;
+	border: 1px solid #889caa;
+	border-radius: 2px;
+	color: #1f5fae;
+	font-size: 14px;
+	vertical-align: middle;
+	box-shadow: 1px 1px 2px;
+}
+.ppv-button img {
+	position: relative;
+	margin-top: 15%;
+}
+.ppv-button p {
+	margin-top: 0;
+}
+
+.unpatched-versions {
+	display: grid;
+	grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+	grid-template-rows: 20px auto;
+	grid-gap: 5px;
+}
+
+.upv-title {
+	grid-column: 1 / span 10;
+	font-size: 16px;
+}
+.upv-title p {
+	position: relative;
+	margin-top: 0px;
+	display: inline;
+}
+
+.upv-button {
+	width: 100%;
+	height: 100%;
+	background-color: #e7fbfe;
+	border: 1px solid #889caa;
+	border-radius: 2px;
+	font-size: 12px;
+	color: #1f5fae;
+	vertical-align: middle;
+	box-shadow: 1px 1px 2px;
+}
+.upv-button img {
+	padding: 0 5px 0 3px;
+}
+.upv-button * {
+	margin-top: 5px;
+}
+
+.extras {
+	display: grid;
+	grid-template-columns: 70px 70px 70px 70px 70px 70px;
+	grid-template-rows: 20px minmax(110px, max-content) minmax(110px, max-content);
+	grid-gap: 10px;
+}
+.extras-title {
+	grid-column: 1 / span 6;
+	font-size: 18px;
+}
+.extras-title p {
+	position: relative;
+	margin-top: 5px;
+}
+.extras a {
+	text-decoration: underline;
+	text-decoration-style: dotted;
+}
+
+.xtra-button {
+	width: 100%;
+	height: 100%;
+	background-color: #e7fbfe;
+	border: 1px solid #889caa;
+	border-radius: 2px;
+	color: #1f5fae;
+	font-size: 14px;
+	vertical-align: middle;
+	box-shadow: 1px 1px 2px;
+}
+.xtra-button img {
+	position: relative;
+	margin-top: 15%;
+}
+.xtra-button p {
+	margin-top: 0;
+	font-size: 10px;
+}
+
+/****************************/
+
+.section2-content {
+	margin-top: 5em;
+	margin-bottom: 5em;
+}
+
+@media screen and (max-width: 830px) {
+	body { overflow-y: scroll }
+}
+
+@media screen and (max-width: 480px) {
+	.s1-grid-container { margin-left: -100px }
+	.s2-grid-container { margin-left: -100px; grid-template-columns: 100px 500px; width: 600px }
+}

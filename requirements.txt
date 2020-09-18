@@ -1,0 +1,5 @@
+aiohttp
+sqlalchemy
+jinja2
+sendgrid
+attrs

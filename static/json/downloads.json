@@ -1,0 +1,294 @@
+{
+	"ar": {
+		"85": ["escargot-wlm-8.5.1302-ar.msi", "wlm-8.5.1302-ar.msi"],
+		"81": ["escargot-wlm-8.1.0178-ar.msi", "wlm-8.1.0178-ar.exe"],
+		"75": ["escargot-msn-7.5.0324-ar.msi", "msn-7.5.0324-ar.exe"],
+		"70": ["escargot-msn-7.0.0816-ar.msi", "msn-7.0.0816-ar.exe"],
+		"62": ["escargot-msn-6.2.0205-ar.msi", "msn-6.2.0205-ar.exe"],
+		"50": ["escargot-msn-5.0.0575-ar.msi", "msn-5.0.0575-ar.exe"],
+		"47": ["", "msn-4.7.0106-ar.exe"],
+		"46": ["", "msn-4.6.0084-ar.exe"],
+		"36": ["", "msn-3.6.0039-ar.exe"]
+	},
+	"bg": {
+		"85": ["escargot-wlm-8.5.1302-bg.msi", "wlm-8.5.1302-bg.msi"]
+	},
+	"cs": {
+		"85": ["escargot-wlm-8.5.1302-cs.msi", "wlm-8.5.1302-cs.msi"],
+		"75": ["escargot-msn-7.5.0324-cs.msi", "msn-7.5.0324-cs.exe"],
+		"70": ["escargot-msn-7.0.0816-cs.msi", "msn-7.0.0816-cs.exe"],
+		"50": ["escargot-msn-5.0.0575-cs.msi", "msn-5.0.0575-cs.exe"],
+		"46": ["", "msn-4.6.0084-cs.exe"],
+		"36": ["", "msn-3.6.0039-cs.exe"]
+	},
+	"da": {
+		"85": ["escargot-wlm-8.5.1302-da.msi", "wlm-8.5.1302-da.msi"],
+		"81": ["escargot-wlm-8.1.0178-da.msi", "wlm-8.1.0178-da.exe"],
+		"75": ["escargot-msn-7.5.0324-da.msi", "msn-7.5.0324-da.exe"],
+		"62": ["escargot-msn-6.2.0208-da.msi", "msn-6.2.0208-da.exe"],
+		"50": ["escargot-msn-5.0.0575-da.msi", "msn-5.0.0575-da.exe"],
+		"46": ["", "msn-4.6.0084-da.exe"],
+		"36": ["", "msn-3.6.0039-da.exe"]
+	},
+	"de": {
+		"85": ["escargot-wlm-8.5.1302-de.msi", "wlm-8.5.1302-de.msi"],
+		"81": ["escargot-wlm-8.1.0178-de.msi", "wlm-8.1.0178-de.exe"],
+		"75": ["escargot-msn-7.5.0324-de.msi", "msn-7.5.0324-de.exe"],
+		"70": ["escargot-msn-7.0.0820-de.msi", "msn-7.0.0820-de.exe"],
+		"50": ["escargot-msn-5.0.0575-de.msi", "msn-5.0.0575-de.exe"],
+		"46": ["", "msn-4.6.0073-de.exe"],
+		"36": ["", "msn-3.6.0039-de.exe"]
+	},
+	"el": {
+		"85": ["escargot-wlm-8.5.1302-el.msi", "wlm-8.5.1302-el.msi"],
+		"75": ["escargot-msn-7.5.0324-el.msi", "msn-7.5.0324-el.exe"],
+		"70": ["escargot-msn-7.0.0820-el.msi", "msn-7.0.0820-el.exe"],
+		"50": ["escargot-msn-5.0.0540-el.msi", "msn-5.0.0540-el.msi"],
+		"46": ["", "msn-4.6.0084-el.exe"],
+		"36": ["", "msn-3.6.0039-el.exe"]
+	},
+	"en": {
+		"85": ["escargot-wlm-8.5.1302-en.msi", "wlm-8.5.1302-en.msi"],
+		"81": ["escargot-wlm-8.1.0178-en.msi", "wlm-8.1.0178-en.exe"],
+		"75": ["escargot-msn-7.5.0324-en.msi", "msn-7.5.0324-en.exe"],
+		"70": ["escargot-msn-7.0.0820-en.msi", "msn-7.0.0820-en.exe"],
+		"62": ["escargot-msn-6.2.0208-en.msi", "msn-6.2.0208-en.exe"],
+		"50": ["escargot-msn-5.0.0575-en.msi", "msn-5.0.0575-en.exe"],
+		"47": ["", "msn-4.7.0106-en.exe"],
+		"46": ["", "msn-4.6.0084-en.exe"],
+		"36": ["", "msn-3.6.0039-en.exe"],
+		"22": ["", "msn-2.2.1053-en.exe"],
+		"10": ["", "msn-1.0.0893-en.exe"]
+	},
+	"es": {
+		"85": ["escargot-wlm-8.5.1302-es.msi", "wlm-8.5.1302-es.msi"],
+		"81": ["escargot-wlm-8.1.0178-es.msi", "wlm-8.1.0178-es.exe"],
+		"75": ["escargot-msn-7.5.0324-es.msi", "msn-7.5.0324-es.exe"],
+		"70": ["escargot-msn-7.0.0820-es.msi", "msn-7.0.0820-es.exe"],
+		"62": ["escargot-msn-6.2.0208-es.msi", "msn-6.2.0208-es.exe"],
+		"50": ["escargot-msn-5.0.0575-es.msi", "msn-5.0.0575-es.exe"],
+		"46": ["", "msn-4.6.0084-es.exe"],
+		"36": ["", "msn-3.6.0039-es.exe"],
+		"22": ["", "msn-2.2.1053-es.exe"]
+	},
+	"et": {
+		"85": ["escargot-wlm-8.5.1302-et.msi", "wlm-8.5.1302-et.msi"],
+		"81": ["escargot-wlm-8.1.0178-et.msi", "wlm-8.1.0178-et.exe"]
+	},
+	"fi": {
+		"85": ["escargot-wlm-8.5.1302-fi.msi", "wlm-8.5.1302-fi.msi"],
+		"81": ["escargot-wlm-8.1.0178-fi.msi", "wlm-8.1.0178-fi.exe"],
+		"75": ["escargot-msn-7.5.0324-fi.msi", "msn-7.5.0324-fi.exe"],
+		"70": ["escargot-msn-7.0.0777-fi.msi", "msn-7.0.0777-fi.exe"],
+		"50": ["escargot-msn-5.0.0575-fi.msi", "msn-5.0.0575-fi.exe"],
+		"45": ["", "msn-4.5.0127-fi.exe"],
+		"36": ["", "msn-3.6.0039-fi.exe"]
+	},
+	"fr": {
+		"85": ["escargot-wlm-8.5.1302-fr.msi", "wlm-8.5.1302-fr.msi"],
+		"81": ["escargot-wlm-8.1.0178-fr.msi", "wlm-8.1.0178-fr.exe"],
+		"75": ["escargot-msn-7.5.0324-fr.msi", "msn-7.5.0324-fr.exe"],
+		"70": ["escargot-msn-7.0.0820-fr.msi", "msn-7.0.0820-fr.exe"],
+		"62": ["escargot-msn-6.2.0205-fr.msi", "msn-6.2.0205-fr.exe"],
+		"50": ["escargot-msn-5.0.0575-fr.msi", "msn-5.0.0575-fr.exe"],
+		"47": ["", "msn-4.7.0106-fr.exe"],
+		"46": ["", "msn-4.6.0073-fr.exe"],
+		"36": ["", "msn-3.6.0039-fr.exe"]
+	},
+	"he": {
+		"85": ["escargot-wlm-8.5.1302-he.msi", "wlm-8.5.1302-he.msi"],
+		"75": ["escargot-msn-7.5.0324-he.msi", "msn-7.5.0324-he.exe"],
+		"70": ["escargot-msn-7.0.0820-he.msi", "msn-7.0.0820-he.exe"],
+		"62": ["escargot-msn-6.2.0208-he.msi", "msn-6.2.0208-he.exe"],
+		"50": ["escargot-msn-5.0.0575-he.msi", "msn-5.0.0575-he.exe"],
+		"46": ["", "msn-4.6.0084-he.exe"],
+		"36": ["", "msn-3.6.0039-he.exe"]
+	},
+	"hr": {
+		"85": ["escargot-wlm-8.5.1302-hr.msi", "wlm-8.5.1302-hr.msi"]
+	},
+	"hu": {
+		"85": ["escargot-wlm-8.5.1302-hu.msi", "wlm-8.5.1302-hu.msi"],
+		"81": ["escargot-wlm-8.1.0178-hu.msi", "wlm-8.1.0178-hu.exe"],
+		"75": ["escargot-msn-7.5.0324-hu.msi", "msn-7.5.0324-hu.exe"],
+		"70": ["escargot-msn-7.0.0820-hu.msi", "msn-7.0.0820-hu.exe"],
+		"62": ["escargot-msn-6.2.0137-hu.msi", "msn-6.2.0137-hu.exe"],
+		"50": ["escargot-msn-5.0.0575-hu.msi", "msn-5.0.0575-hu.exe"],
+		"46": ["", "msn-4.6.0084-hu.exe"]
+	},
+	"it": {
+		"85": ["escargot-wlm-8.5.1302-it.msi", "wlm-8.5.1302-it.msi"],
+		"81": ["escargot-wlm-8.1.0178-it.msi", "wlm-8.1.0178-it.exe"],
+		"75": ["escargot-msn-7.5.0324-it.msi", "msn-7.5.0324-it.exe"],
+		"70": ["escargot-msn-7.0.0820-it.msi", "msn-7.0.0820-it.exe"],
+		"62": ["escargot-msn-6.2.0205-it.msi", "msn-6.2.0205-it.exe"],
+		"50": ["escargot-msn-5.0.0575-it.msi", "msn-5.0.0575-it.exe"],
+		"46": ["", "msn-4.6.0084-it.exe"],
+		"36": ["", "msn-3.6.0039-it.exe"]
+	},
+	"ja": {
+		"85": ["escargot-wlm-8.5.1302-ja.msi", "wlm-8.5.1302-ja.msi"],
+		"81": ["escargot-wlm-8.1.0178-ja.msi", "wlm-8.1.0178-ja.exe"],
+		"75": ["escargot-msn-7.5.0324-ja.msi", "msn-7.5.0324-ja.exe"],
+		"70": ["escargot-msn-7.0.0820-ja.msi", "msn-7.0.0820-ja.exe"],
+		"62": ["escargot-msn-6.2.0205-ja.msi", "msn-6.2.0205-ja.exe"],
+		"50": ["escargot-msn-5.0.0575-ja.msi", "msn-5.0.0575-ja.exe"],
+		"46": ["", "msn-4.6.0073-ja.exe"],
+		"36": ["", "msn-3.6.0039-ja.exe"]
+	},
+	"ko": {
+		"85": ["escargot-wlm-8.5.1302-ko.msi", "wlm-8.5.1302-ko.msi"],
+		"81": ["escargot-wlm-8.1.0178-ko.msi", "wlm-8.1.0178-ko.exe"],
+		"75": ["escargot-msn-7.5.0324-ko.msi", "msn-7.5.0324-ko.exe"],
+		"70": ["escargot-msn-7.0.0820-ko.msi", "msn-7.0.0820-ko.exe"],
+		"62": ["escargot-msn-6.2.0137-ko.msi", "msn-6.2.0137-ko.exe"],
+		"50": ["escargot-msn-5.0.0575-ko.msi", "msn-5.0.0575-ko.exe"],
+		"45": ["", "msn-4.5.0127-ko.exe"],
+		"36": ["", "msn-3.6.0039-ko.exe"]
+	},
+	"lt": {
+		"85": ["escargot-wlm-8.5.1302-lt.msi", "wlm-8.5.1302-lt.msi"]
+	},
+	"lv": {
+		"85": ["escargot-wlm-8.5.1302-lv.msi", "wlm-8.5.1302-lv.msi"]
+	},
+	"nb": {
+		"85": ["escargot-wlm-8.5.1302-nb.msi", "wlm-8.5.1302-nb.msi"],
+		"81": ["escargot-wlm-8.1.0178-no.msi", "wlm-8.1.0178-no.exe", false],
+		"75": ["escargot-msn-7.5.0324-no.msi", "msn-7.5.0324-no.exe", false],
+		"70": ["escargot-msn-7.0.0777-no.msi", "msn-7.0.0777-no.exe", false],
+		"50": ["escargot-msn-5.0.0575-no.msi", "msn-5.0.0575-no.exe", false],
+		"46": ["", "msn-4.6.0084-no.exe", false],
+		"36": ["", "msn-3.6.0039-no.exe", false]
+	},
+	"nl": {
+		"85": ["escargot-wlm-8.5.1302-nl.msi", "wlm-8.5.1302-nl.msi"],
+		"81": ["escargot-wlm-8.1.0178-nl.msi", "wlm-8.1.0178-nl.exe"],
+		"75": ["escargot-msn-7.5.0324-nl.msi", "msn-7.5.0324-nl.exe"],
+		"70": ["escargot-msn-7.0.0820-nl.msi", "msn-7.0.0820-nl.exe"],
+		"62": ["escargot-msn-6.2.0205-nl.msi", "msn-6.2.0205-nl.exe"],
+		"50": ["escargot-msn-5.0.0575-nl.msi", "msn-5.0.0575-nl.exe"],
+		"46": ["", "msn-4.6.0073-nl.exe"],
+		"36": ["", "msn-3.6.0039-nl.exe"]
+	},
+	"pl": {
+		"85": ["escargot-wlm-8.5.1302-pl.msi", "wlm-8.5.1302-pl.msi"],
+		"75": ["escargot-msn-7.5.0324-pl.msi", "msn-7.5.0324-pl.exe"],
+		"70": ["escargot-msn-7.0.0820-pl.msi", "msn-7.0.0820-pl.exe"],
+		"62": ["escargot-msn-6.2.0137-pl.msi", "msn-6.2.0137-pl.exe"],
+		"50": ["escargot-msn-5.0.0575-pl.msi", "msn-5.0.0575-pl.exe"],
+		"46": ["", "msn-4.6.0073-pl.exe"]
+	},
+	"pt-br": {
+		"85": ["escargot-wlm-8.5.1302-pt-br.msi", "wlm-8.5.1302-pt-br.msi"],
+		"81": ["escargot-wlm-8.1.0178-pt-br.msi", "wlm-8.1.0178-pt-br.exe"],
+		"75": ["escargot-msn-7.5.0324-pt-br.msi", "msn-7.5.0324-pt-br.exe"],
+		"70": ["escargot-msn-7.0.0820-pt-br.msi", "msn-7.0.0820-pt-br.exe"],
+		"62": ["escargot-msn-6.2.0205-pt-br.msi", "msn-6.2.0205-pt-br.exe"],
+		"50": ["escargot-msn-5.0.0575-pt-br.msi", "msn-5.0.0575-pt-br.exe"],
+		"46": ["", "msn-4.6.0084-pt-br.exe"],
+		"36": ["", "msn-3.6.0039-pt-br.exe"]
+	},
+	"pt-pt": {
+		"85": ["escargot-wlm-8.5.1302-pt-pt.msi", "wlm-8.5.1302-pt-pt.msi"],
+		"81": ["escargot-wlm-8.1.0178-pt-pt.msi", "wlm-8.1.0178-pt-pt.exe"],
+		"75": ["escargot-msn-7.5.0324-pt-pt.msi", "msn-7.5.0324-pt-pt.exe"],
+		"70": ["escargot-msn-7.0.0820-pt-pt.msi", "msn-7.0.0820-pt-pt.exe"],
+		"62": ["escargot-msn-6.2.0137-pt-pt.msi", "msn-6.2.0137-pt-pt.exe"],
+		"50": ["escargot-msn-5.0.0575-pt-pt.msi", "msn-5.0.0575-pt-pt.exe"],
+		"46": ["", "msn-4.6.0073-pt-pt.exe"],
+		"36": ["", "msn-3.6.0026-pt-pt.exe"]
+	},
+	"ro": {
+		"85": ["escargot-wlm-8.5.1302-ro.msi", "wlm-8.5.1302-ro.msi"],
+		"81": ["escargot-wlm-8.1.0178-ro.msi", "wlm-8.1.0178-ro.exe"]
+	},
+	"ru": {
+		"85": ["escargot-wlm-8.5.1302-ru.msi", "wlm-8.5.1302-ru.msi"],
+		"75": ["escargot-msn-7.5.0324-ru.msi", "msn-7.5.0324-ru.exe"],
+		"70": ["escargot-msn-7.0.0820-ru.msi", "msn-7.0.0820-ru.exe"],
+		"62": ["escargot-msn-6.2.0205-ru.msi", "msn-6.2.0205-ru.exe"],
+		"50": ["escargot-msn-5.0.0575-ru.msi", "msn-5.0.0575-ru.exe"],
+		"46": ["", "msn-4.6.0073-ru.exe"],
+		"36": ["", "msn-3.6.0039-ru.exe"]
+	},
+	"sk": {
+		"81": ["escargot-wlm-8.1.0178-sk.msi", "wlm-8.1.0178-sk.exe"],
+		"75": ["escargot-msn-7.5.0324-sk.msi", "msn-7.5.0324-sk.exe"],
+		"70": ["escargot-msn-7.0.0777-sk.msi", "msn-7.0.0777-sk.exe"],
+		"50": ["escargot-msn-5.0.0575-sk.msi", "msn-5.0.0575-sk.exe"]
+	},
+	"sl": {
+		"85": ["escargot-wlm-8.5.1302-sl.msi", "wlm-8.5.1302-sl.msi"],
+		"81": ["escargot-wlm-8.1.0178-sl.msi", "wlm-8.1.0178-sl.exe"],
+		"75": ["escargot-msn-7.5.0324-sl.msi", "msn-7.5.0324-sl.exe"],
+		"70": ["escargot-msn-7.0.0820-sl.msi", "msn-7.0.0820-sl.exe"],
+		"50": ["escargot-msn-5.0.0575-sl.msi", "msn-5.0.0575-sl.exe"],
+		"46": ["", "msn-4.6.0084-sl.exe"],
+		"36": ["", "msn-3.6.0039-sl.exe"]
+	},
+	"sr-Latn": {
+		"85": ["escargot-wlm-8.5.1302-sr-Latn.msi", "wlm-8.5.1302-sr-Latn.msi"]
+	},
+	"sv": {
+		"85": ["escargot-wlm-8.5.1302-sv.msi", "wlm-8.5.1302-sv.msi"],
+		"81": ["escargot-wlm-8.1.0178-sv.msi", "wlm-8.1.0178-sv.exe"],
+		"75": ["escargot-msn-7.5.0324-sv.msi", "msn-7.5.0324-sv.exe"],
+		"70": ["escargot-msn-7.0.0820-sv.msi", "msn-7.0.0820-sv.exe"],
+		"62": ["escargot-msn-6.2.0208-sv.msi", "msn-6.2.0208-sv.exe"],
+		"50": ["escargot-msn-5.0.0575-sv.msi", "msn-5.0.0575-sv.exe"],
+		"46": ["", "msn-4.6.0073-sv.exe"],
+		"36": ["", "msn-3.6.0039-sv.exe"]
+	},
+	"th": {
+		"85": ["escargot-wlm-8.5.1302-th.msi", "wlm-8.5.1302-th.msi"],
+		"81": ["escargot-wlm-8.1.0178-th.msi", "wlm-8.1.0178-th.exe"]
+	},
+	"tr": {
+		"85": ["escargot-wlm-8.5.1302-tr.msi", "wlm-8.5.1302-tr.msi"],
+		"81": ["escargot-wlm-8.1.0178-tr.msi", "wlm-8.1.0178-tr.exe"],
+		"75": ["escargot-msn-7.5.0324-tr.msi", "msn-7.5.0324-tr.exe"],
+		"70": ["escargot-msn-7.0.0820-tr.msi", "msn-7.0.0820-tr.exe"],
+		"62": ["escargot-msn-6.2.0208-tr.msi", "msn-6.2.0208-tr.exe"],
+		"50": ["escargot-msn-5.0.0575-tr.msi", "msn-5.0.0575-tr.exe"],
+		"46": ["", "msn-4.6.0084-tr.exe"],
+		"36": ["", "msn-3.6.0039-tr.exe"]
+	},
+	"uk": {
+		"85": ["escargot-wlm-8.5.1302-uk.msi", "wlm-8.5.1302-uk.msi"]
+	},
+	"zh-chs": {
+		"85": ["escargot-wlm-8.5.1302-zh-chs.msi", "wlm-8.5.1302-zh-chs.msi"],
+		"75": ["escargot-msn-7.5.0324-zh-cn.msi", "msn-7.5.0324-zh-cn.exe"],
+		"70": ["escargot-msn-7.0.0820-zh-cn.msi", "msn-7.0.0820-zh-cn.exe"],
+		"62": ["escargot-msn-6.2.0205-zh-cn.msi", "msn-6.2.0205-zh-cn.exe"],
+		"50": ["escargot-msn-5.0.0575-zh-cn.msi", "msn-5.0.0575-zh-cn.exe"],
+		"46": ["", "msn-4.6.0073-zh-cn.exe"],
+		"36": ["", "msn-3.6.0039-zh-cn.exe"]
+	},
+	"zh-cht": {
+		"85": ["escargot-wlm-8.5.1302-zh-cht.msi", "wlm-8.5.1302-zh-cht.msi"],
+		"81": ["escargot-wlm-8.1.0178-zh-tw.msi", "wlm-8.1.0178-zh-tw.exe"],
+		"75": ["escargot-msn-7.5.0324-zh-tw.msi", "msn-7.5.0324-zh-tw.exe"],
+		"70": ["escargot-msn-7.0.0820-zh-tw.msi", "msn-7.0.0820-zh-tw.exe"],
+		"62": ["escargot-msn-6.2.0205-zh-tw.msi", "msn-6.2.0205-zh-tw.exe"],
+		"50": ["escargot-msn-5.0.0575-zh-tw.msi", "msn-5.0.0575-zh-tw.exe"],
+		"46": ["", "msn-4.6.0073-zh-tw.exe"],
+		"36": ["", "msn-3.6.0039-zh-tw.exe"]
+	},
+	
+	"lang": {
+		"85": ["patched", "unpatched"],
+		"81": ["patched", "unpatched"],
+		"75": ["patched", "unpatched"],
+		"70": ["patched", "unpatched"],
+		"62": ["patched", "unpatched"],
+		"50": ["patched", "unpatched"],
+		"47": ["patched", "unpatched"],
+		"46": ["patched", "unpatched"],
+		"45": ["patched", "unpatched"],
+		"36": ["patched", "unpatched"],
+		"22": ["patched", "unpatched"],
+		"10": ["patched", "unpatched"]
+	}
+}

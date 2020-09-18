@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>
+			{% if title %}
+				{{ title }} |
+			{% endif %}
+			SxSuri Messenger Server
+		</title>
+		<link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+		<link rel="stylesheet" href="/static/style/base.css?{{cache_buster}}"/>
+		{% if not from_tab %}<script src="/static/script/page.js?{{cache_buster}}"></script>{% endif %}
+		{%- block head_end -%}{%- endblock -%}
+	</head>
+	<body{% if from_tab %} onclick="NavPage();"{% endif %}>
+		{%- block body -%}{%- endblock -%}
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119140043-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-119140043-1');
+		</script>
+	</body>
+</html>

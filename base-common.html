@@ -1,0 +1,120 @@
+{%- extends 'base.html' -%}
+
+{%- block head_end -%}
+	<link rel="stylesheet" href="/static/style/index.css?{{cache_buster}}"/>
+	{% if from_tab %}
+		<script type="text/javascript">
+			function preventDefaultFallback() {
+				if (window.event.preventDefault) {
+					window.event.preventDefault();
+				} else {
+					window.event.returnValue = false;
+				}
+			}
+			
+			function NavPage(){
+				var tmp, e, srcE, url;
+				srcE = window.event.srcElement;
+				if (srcE != null){
+					tmp = srcE.tagName;
+					while(tmp != "BODY"){
+						if (tmp == "A"){
+							e = srcE;
+							break;
+						}else{
+							srcE = srcE.parentElement;
+							tmp = srcE.tagName;	
+						}
+					}	
+					if(e != null){
+						url = e.href;
+						if(url.indexOf("javascript:") == -1){
+							window.open(url,'msnt');
+							preventDefaultFallback();
+						}else{
+							eval(url.substring(11,url.length));
+							preventDefaultFallback();
+						}
+					}
+				}
+			}
+		</script>
+	{% endif %}
+{%- endblock -%}
+
+{%- block body -%}
+	<div class="content-container">
+		<header>
+			<div class="col span1-5">
+				<span class="logo">
+					<a href="/">
+						<img src="/static/logo.png" height="90px">
+					</a>
+					<p id="slogan">Never get banned from messenger</p>
+				</span>
+			</div>
+			
+			<div class="col span4-5" align="right">
+				<div class="header-menu">
+					<b>
+						<a href="/stats">{% if stats %}{{ stats['logged_in'] }} online{% else %}Stats{% endif %}</a> &nbsp;
+						<a id="hdr-news" href="/news">News</a> &nbsp;
+						<a id="hdr-dls" href="/downloads">Downloads</a> &nbsp;
+						<a id="hdr-status" href="/status">Status</a> &nbsp; 
+						
+						<a id="hdr-discord" href="https://discord.gg/cUgHDzF" target="_blank">Discord</a> &nbsp;
+						<a id="hdr-forgot" href="/forgot">Forgot Password?</a> &nbsp;
+						{% if not from_tab %}<a href="/register"><img src="/static/sign_up_small.png" style="vertical-align: middle"></a>{% endif %}
+					</b>
+				</div>
+			</div>
+		</header>
+		
+		<div class="group section content">
+			<div class="group section">
+				<div class="col span4-4 separator">
+				</div>
+			</div>
+			
+			{% block content %}{% endblock %}
+			
+			<div class="group section">
+				<div class="col span4-4 separator content-end spin180"></div>
+			</div>
+		</div>
+		
+		<div class="footer">
+			<p class="footer-menu">
+				<a id="ftr-home" href="/">Home</a>
+				&bull;
+				{% if not from_tab %}
+				<a id="ftr-signup" href="/register">Sign Up</a>
+				&bull;
+				{% endif %}
+				<a id="ftr-forgot" href="/forgot">Forgot Password?</a>
+				&bull;
+				<a id="ftr-dls" href="/downloads">Downloads</a>
+				&bull;
+				<a id="ftr-status" href="/status">Service Status</a>
+				&bull;
+				<a id="ftr-puid" href="/wlm-puid">WLM PUID Generator</a>
+				&bull;
+				
+				<a href="/faq">FAQ</a>
+				&bull;
+				<a id="ftr-news" href="/news">News</a>
+				&bull;
+				<a href="/stats">{% if stats %}{{ stats['logged_in'] }} online{% else %}Stats{% endif %}</a>
+			</p>
+			<div id="ftr-txt">
+				<p>
+					Design by <a href="http://spriteclad.com/main.html" id="Spriteclad-link" target="_blank">Spriteclad</a>.
+					Website by <a href="http://maigol.ml" id="Maigol-link" target="_blank">Maigol</a>.
+				</p>
+				<p>
+					MSN, MSN Messenger, Windows Live, "Windows", and Windows Live Messenger are all properties of the Microsoft Corporation. We own none of this. This is a fan project for personal purposes only.
+				</p>
+			</div>
+		</div>
+	</div>
+{%- endblock -%}

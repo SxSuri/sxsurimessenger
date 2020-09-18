@@ -1,0 +1,70 @@
+			<tab>
+				<type>page</type>
+				<contenturl>http://m1.sxsurimessenger.ml/etc/escargot-today</contenturl>
+				<hiturl>http://m1.sxsurimessenger.ml/etc/escargot-today</hiturl>
+				<image>http://storage.googleapis.com/escargot-storage-1/public/tabicon/escargot.png</image>
+				<name>SxSuri Messenger Today</name>
+				<tooltip>SxSuri Messenger Today</tooltip>
+				<siteid>0</siteid>
+				<notificationid>0</notificationid>
+			</tab>
+			<tab>
+				<type>page</type>
+				<contenturl>http://m.facebook.com</contenturl>
+				<hiturl>http://m.facebook.com</hiturl>
+				<image>http://storage.googleapis.com/escargot-storage-1/public/tabicon/facebook.png</image>
+				<name>Facebook</name>
+				<tooltip>Facebook</tooltip>
+				<siteid>0</siteid>
+				<notificationid>0</notificationid>
+			</tab>
+			<tab>
+				<type>page</type>
+				<contenturl>http://m.facebook.com/messages</contenturl>
+				<hiturl>http://m.facebook.com/messages</hiturl>
+				<image>http://storage.googleapis.com/escargot-storage-1/public/tabicon/facebook-messenger.png</image>
+				<name>Facebook Messenger</name>
+				<tooltip>Facebook Messenger</tooltip>
+				<siteid>0</siteid>
+				<notificationid>0</notificationid>
+			</tab>
+			<tab>
+				<type>page</type>
+				<contenturl>http://m.youtube.com</contenturl>
+				<hiturl>http://m.youtube.com</hiturl>
+				<image>http://storage.googleapis.com/escargot-storage-1/public/tabicon/youtube.png</image>
+				<name>YouTube</name>
+				<tooltip>YouTube</tooltip>
+				<siteid>0</siteid>
+				<notificationid>0</notificationid>
+			</tab>
+			<tab>
+				<type>page</type>
+				<contenturl>http://msn.com/weather</contenturl>
+				<hiturl>http://msn.com/weather</hiturl>
+				<image>http://storage.googleapis.com/escargot-storage-1/public/tabicon/msn-weather.png</image>
+				<name>MSN Weather</name>
+				<tooltip>MSN Weather</tooltip>
+				<siteid>0</siteid>
+				<notificationid>0</notificationid>
+			</tab>
+			<tab>
+				<type>page</type>
+				<contenturl>http://m.twitter.com</contenturl>
+				<hiturl>http://m.twitter.com</hiturl>
+				<image>http://storage.googleapis.com/escargot-storage-1/public/tabicon/twitter.png</image>
+				<name>Twitter</name>
+				<tooltip>Twitter</tooltip>
+				<siteid>0</siteid>
+				<notificationid>0</notificationid>
+			</tab>
+			<tab>
+				<type>page</type>
+				<contenturl>http://ebay.com</contenturl>
+				<hiturl>http://ebay.com</hiturl>
+				<image>http://storage.googleapis.com/escargot-storage-1/public/tabicon/ebay.png</image>
+				<name>eBay</name>
+				<tooltip>eBay</tooltip>
+				<siteid>0</siteid>
+				<notificationid>0</notificationid>
+			</tab>
